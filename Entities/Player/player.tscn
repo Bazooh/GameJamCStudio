@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cl2f1o1sf8wo8"]
+
+[ext_resource type="Script" path="res://Scripts/movement.gd" id="1_nfsn0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t2cuq"]
+
+[node name="player" type="CharacterBody2D"]
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_t2cuq")
+
+[node name="movement" type="Node2D" parent="."]
+script = ExtResource("1_nfsn0")
